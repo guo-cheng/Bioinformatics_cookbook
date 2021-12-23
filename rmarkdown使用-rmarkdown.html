@@ -4,21 +4,21 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>A 余音绕梁 | R for Bioinformatics</title>
-  <meta name="description" content="A 余音绕梁 | R for Bioinformatics" />
+  <title>Rmarkdown使用 {#Rmarkdown} | R for Bioinformatics</title>
+  <meta name="description" content="Rmarkdown使用 {#Rmarkdown} | R for Bioinformatics" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="A 余音绕梁 | R for Bioinformatics" />
+  <meta property="og:title" content="Rmarkdown使用 {#Rmarkdown} | R for Bioinformatics" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="/images/cover.npg" />
-  <meta property="og:description" content="A 余音绕梁 | R for Bioinformatics" />
+  <meta property="og:description" content="Rmarkdown使用 {#Rmarkdown} | R for Bioinformatics" />
   <meta name="github-repo" content="yihui/bookdown-chinese" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="A 余音绕梁 | R for Bioinformatics" />
+  <meta name="twitter:title" content="Rmarkdown使用 {#Rmarkdown} | R for Bioinformatics" />
   
-  <meta name="twitter:description" content="A 余音绕梁 | R for Bioinformatics" />
+  <meta name="twitter:description" content="Rmarkdown使用 {#Rmarkdown} | R for Bioinformatics" />
   <meta name="twitter:image" content="/images/cover.npg" />
 
 <meta name="author" content="颤抖吧小虫子" />
@@ -32,15 +32,15 @@
   
 <link rel="prev" href="ggplot2.html"/>
 <link rel="next" href="references.html"/>
-<script src="libs/header-attrs/header-attrs.js"></script>
-<script src="libs/jquery/jquery.min.js"></script>
-<link href="libs/gitbook/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-clipboard.css" rel="stylesheet" />
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
@@ -50,8 +50,8 @@
 
 
 
-<link href="libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -118,28 +118,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
@@ -165,8 +143,8 @@ div.csl-indent {
 <li class="part"><span><b>I R Data Science</b></span></li>
 <li class="chapter" data-level="1" data-path="dplyr.html"><a href="dplyr.html"><i class="fa fa-check"></i><b>1</b> 使用dplyr进行数据转换</a></li>
 <li class="chapter" data-level="2" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>2</b> 使用ggplot2进行数据可视化</a></li>
+<li class="chapter" data-level="" data-path="rmarkdown使用-rmarkdown.html"><a href="rmarkdown使用-rmarkdown.html"><i class="fa fa-check"></i>Rmarkdown使用 {#Rmarkdown}</a></li>
 <li class="appendix"><span><b>附录</b></span></li>
-<li class="chapter" data-level="A" data-path="sound.html"><a href="sound.html"><i class="fa fa-check"></i><b>A</b> 余音绕梁</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>参考文献</a></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="blank">本书由 bookdown 强力驱动</a></li>
@@ -188,9 +166,25 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="sound" class="section level1" number="3">
-<h1><span class="header-section-number">A</span> 余音绕梁</h1>
-<p>呐，到这里朕的书差不多写完了，但还有几句话要交待，所以开个附录，再啰嗦几句，各位客官稍安勿躁、扶稳坐好。</p>
+<div id="rmarkdown使用-rmarkdown" class="section level1 unnumbered">
+<h1>Rmarkdown使用 {#Rmarkdown}</h1>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="rmarkdown使用-rmarkdown.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">sin</span>(pi<span class="sc">/</span><span class="dv">2</span>)</span>
+<span id="cb3-2"><a href="rmarkdown使用-rmarkdown.html#cb3-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">1</span></span>
+<span id="cb3-3"><a href="rmarkdown使用-rmarkdown.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">cos</span>(pi<span class="sc">/</span><span class="dv">2</span>)</span>
+<span id="cb3-4"><a href="rmarkdown使用-rmarkdown.html#cb3-4" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">6.123234e-17</span></span>
+<span id="cb3-5"><a href="rmarkdown使用-rmarkdown.html#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">plot</span>(pressure)</span></code></pre></div>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="rmarkdown使用-rmarkdown.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)</span></code></pre></div>
+<div class="figure" style="text-align: right"><span id="fig:unnamed-chunk-2"></span>
+<img src="bookdown_files/figure-html/unnamed-chunk-2-1.png" alt="point plot" width="672" />
+<p class="caption">
+图 2.1: point plot
+</p>
+</div>
+
+</div>
+
+
 
 </div>
             </section>
@@ -202,15 +196,15 @@ div.csl-indent {
 <a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
-<script src="libs/gitbook/js/app.min.js"></script>
-<script src="libs/gitbook/js/lunr.js"></script>
-<script src="libs/gitbook/js/clipboard.min.js"></script>
-<script src="libs/gitbook/js/plugin-search.js"></script>
-<script src="libs/gitbook/js/plugin-sharing.js"></script>
-<script src="libs/gitbook/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook/js/jquery.highlight.js"></script>
-<script src="libs/gitbook/js/plugin-clipboard.js"></script>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -231,7 +225,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/yihui/bookdown-chinese/edit/master/10-hmm.Rmd",
+"link": "https://github.com/yihui/bookdown-chinese/edit/master/10-Rmarkdown.Rmd",
 "text": "编辑"
 },
 "history": {
