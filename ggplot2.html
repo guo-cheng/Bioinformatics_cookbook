@@ -4,21 +4,21 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>第 2 章 使用ggplot2进行数据可视化 | R for Bioinformatics</title>
-  <meta name="description" content="第 2 章 使用ggplot2进行数据可视化 | R for Bioinformatics" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <title>第 3 章 使用ggplot2进行数据可视化 | R for Bioinformatics</title>
+  <meta name="description" content="第 3 章 使用ggplot2进行数据可视化 | R for Bioinformatics" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="第 2 章 使用ggplot2进行数据可视化 | R for Bioinformatics" />
+  <meta property="og:title" content="第 3 章 使用ggplot2进行数据可视化 | R for Bioinformatics" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="/images/cover.npg" />
-  <meta property="og:description" content="第 2 章 使用ggplot2进行数据可视化 | R for Bioinformatics" />
+  <meta property="og:description" content="第 3 章 使用ggplot2进行数据可视化 | R for Bioinformatics" />
   <meta name="github-repo" content="yihui/bookdown-chinese" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="第 2 章 使用ggplot2进行数据可视化 | R for Bioinformatics" />
+  <meta name="twitter:title" content="第 3 章 使用ggplot2进行数据可视化 | R for Bioinformatics" />
   
-  <meta name="twitter:description" content="第 2 章 使用ggplot2进行数据可视化 | R for Bioinformatics" />
+  <meta name="twitter:description" content="第 3 章 使用ggplot2进行数据可视化 | R for Bioinformatics" />
   <meta name="twitter:image" content="/images/cover.npg" />
 
 <meta name="author" content="颤抖吧小虫子" />
@@ -31,16 +31,17 @@
   
   
 <link rel="prev" href="dplyr.html"/>
-<link rel="next" href="sound.html"/>
-<script src="libs/header-attrs/header-attrs.js"></script>
-<script src="libs/jquery/jquery.min.js"></script>
-<link href="libs/gitbook/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-clipboard.css" rel="stylesheet" />
+<link rel="next" href="readr.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
@@ -49,9 +50,10 @@
 
 
 
-
-<link href="libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 <style type="text/css">
@@ -154,7 +156,7 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">中文书示例</a></li>
+<li><a href="./">R for Bioinformatics</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>前言</a>
@@ -163,10 +165,26 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="" data-path="author.html"><a href="author.html"><i class="fa fa-check"></i>作者简介</a></li>
 <li class="part"><span><b>I R Data Science</b></span></li>
-<li class="chapter" data-level="1" data-path="dplyr.html"><a href="dplyr.html"><i class="fa fa-check"></i><b>1</b> 使用dplyr进行数据转换</a></li>
-<li class="chapter" data-level="2" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>2</b> 使用ggplot2进行数据可视化</a></li>
+<li class="chapter" data-level="1" data-path="rmarkdown使用.html"><a href="rmarkdown使用.html"><i class="fa fa-check"></i><b>1</b> Rmarkdown使用</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="rmarkdown使用.html"><a href="rmarkdown使用.html#代码块"><i class="fa fa-check"></i><b>1.1</b> 代码块</a></li>
+<li class="chapter" data-level="1.2" data-path="rmarkdown使用.html"><a href="rmarkdown使用.html#表格"><i class="fa fa-check"></i><b>1.2</b> 表格</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="dplyr.html"><a href="dplyr.html"><i class="fa fa-check"></i><b>2</b> 使用dplyr进行数据转换</a></li>
+<li class="chapter" data-level="3" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>3</b> 使用ggplot2进行数据可视化</a></li>
+<li class="chapter" data-level="4" data-path="readr.html"><a href="readr.html"><i class="fa fa-check"></i><b>4</b> readr</a></li>
+<li class="chapter" data-level="5" data-path="stringr.html"><a href="stringr.html"><i class="fa fa-check"></i><b>5</b> stringr</a></li>
+<li class="chapter" data-level="6" data-path="forcasts.html"><a href="forcasts.html"><i class="fa fa-check"></i><b>6</b> forcasts</a></li>
+<li class="chapter" data-level="7" data-path="magrittr.html"><a href="magrittr.html"><i class="fa fa-check"></i><b>7</b> magrittr</a></li>
+<li class="chapter" data-level="8" data-path="purrr.html"><a href="purrr.html"><i class="fa fa-check"></i><b>8</b> purrr</a></li>
+<li class="chapter" data-level="9" data-path="tibble.html"><a href="tibble.html"><i class="fa fa-check"></i><b>9</b> tibble</a></li>
+<li class="part"><span><b>II R packages usage</b></span></li>
+<li class="chapter" data-level="10" data-path="拼图神器-patchwork包.html"><a href="拼图神器-patchwork包.html"><i class="fa fa-check"></i><b>10</b> 拼图神器: patchwork包</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="拼图神器-patchwork包.html"><a href="拼图神器-patchwork包.html#例子"><i class="fa fa-check"></i><b>10.1</b> 例子</a></li>
+<li class="chapter" data-level="10.2" data-path="拼图神器-patchwork包.html"><a href="拼图神器-patchwork包.html#基本使用"><i class="fa fa-check"></i><b>10.2</b> 基本使用</a></li>
+</ul></li>
 <li class="appendix"><span><b>附录</b></span></li>
-<li class="chapter" data-level="A" data-path="sound.html"><a href="sound.html"><i class="fa fa-check"></i><b>A</b> 余音绕梁</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>参考文献</a></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="blank">本书由 bookdown 强力驱动</a></li>
@@ -188,37 +206,33 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ggplot2" class="section level1" number="2">
-<h1><span class="header-section-number">第 2 章</span> 使用ggplot2进行数据可视化</h1>
-
-
-
-
-
-
+<div id="ggplot2" class="section level1" number="3">
+<h1><span class="header-section-number">第 3 章</span> 使用ggplot2进行数据可视化</h1>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="ggplot2.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb11-2"><a href="ggplot2.html#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="ggplot2.html#cb11-3" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(<span class="at">x=</span>mpg, <span class="at">y=</span>hp, <span class="at">color=</span><span class="fu">factor</span>(cyl)))</span>
+<span id="cb11-4"><a href="ggplot2.html#cb11-4" aria-hidden="true" tabindex="-1"></a>q <span class="ot">&lt;-</span> p <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">key_glyph=</span><span class="st">&quot;dotplot&quot;</span>)</span>
+<span id="cb11-5"><a href="ggplot2.html#cb11-5" aria-hidden="true" tabindex="-1"></a>q</span></code></pre></div>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 
 </div>
-
-
-
             </section>
 
           </div>
         </div>
       </div>
 <a href="dplyr.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="sound.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="readr.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
-<script src="libs/gitbook/js/app.min.js"></script>
-<script src="libs/gitbook/js/lunr.js"></script>
-<script src="libs/gitbook/js/clipboard.min.js"></script>
-<script src="libs/gitbook/js/plugin-search.js"></script>
-<script src="libs/gitbook/js/plugin-sharing.js"></script>
-<script src="libs/gitbook/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook/js/jquery.highlight.js"></script>
-<script src="libs/gitbook/js/plugin-clipboard.js"></script>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -239,7 +253,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/yihui/bookdown-chinese/edit/master/02-ggplot2.Rmd",
+"link": "https://github.com/yihui/bookdown-chinese/edit/master/03-ggplot2.Rmd",
 "text": "编辑"
 },
 "history": {
@@ -251,6 +265,10 @@ gitbook.start({
 "text": null
 },
 "download": ["bookdown.pdf", "bookdown.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "none"
 }
