@@ -2,8 +2,8 @@ fig:hello
 tab:iris
 fig:unnamed-chunk-10
 tab:unnamed-chunk-11
-the-biological-foundations-of-bioinformatics-essential-biology
-basic-bioinformatics-concepts-basic-bioinformatics-concepts
+The_Biological_Foundations_of_Bioinformatics
+Basic_Bioinformatics_Concepts
 Basic_Programming
 Basic_Biostatistics
 Bioinformatics_practice
